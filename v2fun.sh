@@ -8,7 +8,7 @@ green='\033[0;32m'
 red='\033[0;31m'
 plain='\033[0m'
 
-ad_filter="https://git.io/Je2pC"
+ad_filter="https://raw.githubusercontent.com/veip007/v2ray.fun/master/h2y.dat"
 vf_path="/usr/local/v2ray.fun"
 
 # Check Root
@@ -79,7 +79,7 @@ nodejs8_CentOS(){
 }
 
 # Dedicated python for CentOS 6
-py_for_centos="https://git.io/Je2pE"
+py_for_centos="https://raw.githubusercontent.com/veip007/v2ray.fun/master/python2.7_for_centos6.sh"
 py_install="python2.7_for_centos6.sh"
 install_python_for_CentOS6(){
     yum install wget -y
@@ -119,7 +119,7 @@ py_qrcode(){
 # Write v2ray process to CentOS6's system service
 vSvc_Path="/etc/init.d/v2ray"
 write_service_to_CentOS6(){
-    wget -qO v2ray.st https://git.io/Je2pB
+    wget -qO v2ray.st https://raw.githubusercontent.com/veip007/v2ray.fun/add-ons/v2ray.st
     if [ -f /etc/init.d/v2ray ]; then
         rm -rf ${vSvc_Path}
     fi
@@ -169,7 +169,7 @@ cd /usr/local/
 if [ -f ${vf_path} ]; then
     rm -rf v2ray.fun
 fi
-git clone https://github.com/leitbogioro/v2ray.fun
+git clone https://github.com/veip007/v2ray.fun
 
 # 安装V2ray主程序
 bash <(curl -L -s https://install.direct/go.sh)
