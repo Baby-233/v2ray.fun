@@ -60,17 +60,17 @@ v2ray.fun 是一款用于控制、配置 v2ray Linux 服务端的脚本程序，
 ## 安装命令
 
 ```bash
-bash -c "$(curl -fsSL https://git.io/fh9As)"
+wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/v2ray.fun/master/v2fun.sh && chmod +x v2fun.sh && ./v2fun.sh
 ```
 
 ## 升级命令
 ```bash
-bash -c "$(curl -fsSL https://git.io/fh9AZ)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/veip007/v2ray.fun/master/upgrade.sh )"
 ```
 
 ## 卸载命令
 ```bash
-bash -c "$(curl -fsSL https://git.io/fh9AC)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/veip007/v2ray.fun/master/uninstall.sh)"
 ```
 
 
@@ -82,7 +82,7 @@ bash -c "$(curl -fsSL https://git.io/fh9AC)"
 
 ![3](3.png)
 
-<div align=center><img src="https://raw.githubusercontent.com/leitbogioro/v2ray.fun/master/4.jpg"/></div>
+<div align=center><img src="https://raw.githubusercontent.com/veip007/v2ray.fun/master/4.jpg"/></div>
 
 ## 系统要求（以下默认均为 x64 版，x86 版因 nodejs 等组件无法安装，故不提供支持！）
 ## OS Requiremets(These following OS are default x64 version, x86 versions are not supported and don't install on them!)
